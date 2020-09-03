@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <nav>
+        <label class="logo">Railway</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Register.html">Signup</a></li>
+        </ul>
+        </label>
+    </nav>
+    <form action="" name="stud_form" onsubmit="return validate()">
+    <div class="container">
+        <h2>Registration Form</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" onblur="validateString(this.id)">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" onblur="validateEmail(this.id)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobile">Mobile</label>
+                </td>
+                <td>
+                    <input type="number" name="number" id="mobile" placeholder="Enter your mobile number" onblur="validateNumber(this.id)" max="10">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="male">Male
+                    <input type="radio" name="gender" id="gender" value="female">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="course"> Location</label>
+                </td>
+                <td>
+                    <select name="course" id="course"> 
+                        <option value="Select">Select your starting Location</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Gujarat">Gujarat</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="batch">Timings Preferred</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="batch" id="batch">Morning
+                    <input type="checkbox" name="batch" id="batch">Afternoon    
+                    <input type="checkbox" name="batch" id="batch">Evening
+                </td>
+            </tr>
+            <tr class="btn">
+                <td colspan="2" class="btn">
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                    <input type="reset" name="reset" id="reset" value="Reset">
+
+                </td>
+            </tr>
+        </table> 
+    </div>
+    </form>
+</body>
+</html>
